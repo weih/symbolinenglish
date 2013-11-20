@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical CSS3 tables with rounded corners - demo</title>
+<style>
+
+body {
+    width: 600px;
+    margin: 40px auto;
+    font-family: "Hiragino Sans GB", Helvetica, 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 14px;
+    color: #444;
+}
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;    
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+  
+}
+  
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Symbol in English</h2>
+</header>
+
+<table class="bordered">
+
+<thead>
+<tr>
+	<th style>Symbol</th>
+	<th style>English</th>
+	<th style>中文</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style>~</td>
+	<td style>tilde</td>
+	<td style>波浪号</td>
+</tr>
+<tr>
+	<td style>`</td>
+	<td style>grave accent, backquote</td>
+	<td style>反引号</td>
+</tr>
+<tr>
+	<td style>!</td>
+	<td style>exclamation mark</td>
+	<td style>感叹号</td>
+</tr>
+<tr>
+	<td style>@</td>
+	<td style>at</td>
+	<td style>at</td>
+</tr>
+<tr>
+	<td style>#</td>
+	<td style>hash, hash tag</td>
+	<td style>井号</td>
+</tr>
+<tr>
+	<td style>$</td>
+	<td style>dollar sign</td>
+	<td style>美元符号</td>
+</tr>
+<tr>
+	<td style>%</td>
+	<td style>percent</td>
+	<td style>百分号</td>
+</tr>
+<tr>
+	<td style>^</td>
+	<td style>caret</td>
+	<td style>脱字符</td>
+</tr>
+<tr>
+	<td style>&amp;</td>
+	<td style>ampersand, and</td>
+	<td style>and</td>
+</tr>
+<tr>
+	<td style>*</td>
+	<td style>asterisk</td>
+	<td style>星号</td>
+</tr>
+<tr>
+	<td style>( )</td>
+	<td style>parentheses, brackets</td>
+	<td style>括号</td>
+</tr>
+<tr>
+	<td style>{ }</td>
+	<td style>curly brackets</td>
+	<td style>大括号</td>
+</tr>
+<tr>
+	<td style>[ ]</td>
+	<td style>square brackets</td>
+	<td style>中括号</td>
+</tr>
+<tr>
+	<td style>-</td>
+	<td style>dash, minus</td>
+	<td style>连字符</td>
+</tr>
+<tr>
+	<td style>_</td>
+	<td style>underscore</td>
+	<td style>下划线</td>
+</tr>
+<tr>
+	<td style>=</td>
+	<td style>equal</td>
+	<td style>等于号</td>
+</tr>
+<tr>
+	<td style>+</td>
+	<td style>plus, addition</td>
+	<td style>加号</td>
+</tr>
+<tr>
+	<td style>|</td>
+	<td style>vertical bar</td>
+	<td style>竖杠</td>
+</tr>
+<tr>
+	<td style>/</td>
+	<td style>slash</td>
+	<td style>正斜杠</td>
+</tr>
+<tr>
+	<td style>\</td>
+	<td style>backslash</td>
+	<td style>反斜杠</td>
+</tr>
+<tr>
+	<td style>:</td>
+	<td style>colon</td>
+	<td style>冒号</td>
+</tr>
+<tr>
+	<td style>;</td>
+	<td style>semicolon</td>
+	<td style>分号</td>
+</tr>
+<tr>
+	<td style>"</td>
+	<td style>quotation mark, quotes</td>
+	<td style>双引号</td>
+</tr>
+<tr>
+	<td style>'</td>
+	<td style>single quotes, apostrophe</td>
+	<td style>单引号</td>
+</tr>
+<tr>
+	<td style>.</td>
+	<td style>period, dot</td>
+	<td style>点</td>
+</tr>
+<tr>
+	<td style>,</td>
+	<td style>comma</td>
+	<td style>逗号</td>
+</tr>
+<tr>
+	<td style>&lt; &gt;</td>
+	<td style>angle brackets</td>
+	<td style>尖括号</td>
+</tr>
+<tr>
+	<td style>?</td>
+	<td style>question mark</td>
+	<td style>问号</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
