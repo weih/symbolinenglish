@@ -8,4 +8,4 @@ Edit index.html in gh-pages branch to contribute.
 
 Thank you.
 
-ぼくは日本語は下手ですから、間違いのところは絶対あると思う。
+僕は日本語が下手ですから、間違いのところは絶対あると思う。
