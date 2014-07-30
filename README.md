@@ -1,8 +1,8 @@
 [http://weih.github.io/symbolinenglish](http://weih.github.io/symbolinenglish)
 
-A project that show you how to say all the keyboard symbols in English, Chinese and Japanese.
+A project that show you how to say all the keyboard symbols in English, Chinese, Japanese and Spanish.
 
-Mainly in Programming world.
+**Mainly in Programming world**.
 
 Edit index.html in gh-pages branch to contribute.
 
